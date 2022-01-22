@@ -13,29 +13,6 @@ Feladat
 Alakítsd át úgy a programot, hogy a koordinátapárok bekérése addig folytatódjon, míg a felhasználó intervallumon kívüli értéket nem ad meg! A program minden bekérés után rajzolja ki a rácsot úgy, hogy megjeleníti a már korábban megadott koordináták esetében is a '+' jelet!
 '''
 
-tarolo = []
-for i in range(3):
-   tarolo.append(['O ' for szam in range(3)])
 
-
-def listToString(i): 
-    str1 = " " 
-    return (str1.join(i))
-
-def ooo():
-    for i in tarolo:
-        print(listToString(i))
-
-while True:
-        
-    fuggoleges =int(input('adj szamot(0-2)'))
-    vizszintes =int(input('adj szamot(0-2)'))
-    
-    if fuggoleges > 2 or vizszintes > 2:
-        break
-    
-    tarolo[fuggoleges][vizszintes] = tarolo[fuggoleges][vizszintes].replace('O ', '+ ')
-    ooo()
-    
 
 
